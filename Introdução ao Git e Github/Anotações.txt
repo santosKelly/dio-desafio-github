@@ -1,0 +1,15 @@
+Objetos internos GIT:
+
+BLOBS: tipo do objeto, tamanho, barra contraria com 0 = /0 e conteudo. Contem metadados do GIT que são essas caracteristicas anteriormente descritas.
+TREES: Armazenam blocos. Também são metadados que apontam para blobs, ela tem a /0 e aponta para um blob, que por sua vez tem um char 1 e guarda o nome do arquivo ( o blob não guarda nome do arquivo). As arvores apontam para arvores que podem apontar para outros blobs e tambem, pode apontar só para os blobs.
+COMMITS: Objeto que junta tudo. Aponta para uma arvore, para um parente ( ultimo commit antes dele), para um autor, e aponta para uma mensagem. Tem tambem um timestamp.
+
+eval $ (ssh-agent - s) para criar chaves
+
+primeiros comandos GIT:
+
+git init - Inicializa e cria a pasta .git
+git add - mover arquivos
+flag - a mostra itens ocultos 
+
+Link para download do GIT: https://git-scm.com/downloads
